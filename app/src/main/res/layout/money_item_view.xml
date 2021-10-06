@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tvAmount"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dd/MM/yyyy"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>
