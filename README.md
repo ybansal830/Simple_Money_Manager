@@ -11,7 +11,7 @@
 
 |**Balance Screen**|**Add/Edit Screen**|
 |:---|:--|
-|<img src="https://github.com/ybansal830/Simple_Money_Manager/blob/master/Simple_Money_Manager_SC/Balance.jpg?raw=true" height="500px" width="350px"/>|<img src="https://github.com/ybansal830/Simple_Money_Manager/blob/master/Simple_Money_Manager_SC/Add_Edit.jpg?raw=true" height="500px" width="350px"/>|
+|<img src="https://github.com/ybansal830/Simple_Money_Manager/blob/master/Simple_Money_Manager_SC/Balance.jpg?raw=true" height="500px" width="310px"/>|<img src="https://github.com/ybansal830/Simple_Money_Manager/blob/master/Simple_Money_Manager_SC/Add_Edit.jpg?raw=true" height="500px" width="310px"/>|
 
 
 ## Technologies
