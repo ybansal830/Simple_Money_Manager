@@ -36,14 +36,6 @@ class BalanceFragment : Fragment(R.layout.fragment_balance) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        val moneyDatabase = MoneyDatabase.getDatabaseObject(context)
-//        val moneyDAO = moneyDatabase.getMoneyDAO()
-//        val moneyRepo = MoneyRepo(moneyDAO)
-//        val moneyViewModelFactory = MoneyViewModelFactory(moneyRepo)
-//
-//        moneyViewModel = ViewModelProviders.of(this,moneyViewModelFactory).
-//        get(MoneyViewModel::class.java)
-
         datePickerDialog()
 
         setData()

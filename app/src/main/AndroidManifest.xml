@@ -3,21 +3,26 @@
     package="com.myfirst.simplemoneymanager">
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:name=".moneyapp.MoneyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/simple_money_manager_app_logo"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SimpleMoneyManager">
-        <activity android:name=".views.AddEditItemActivity"></activity>
-        <activity android:name=".views.MainActivity">
+        <activity android:name=".views.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".views.AddEditItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.MainActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

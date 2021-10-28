@@ -28,14 +28,6 @@ class IncomeFragment : Fragment(R.layout.fragment_income), OnMoneyItemClicked {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        val moneyDatabase = MoneyDatabase.getDatabaseObject(context)
-//        val moneyDAO = moneyDatabase.getMoneyDAO()
-//        val moneyRepo = MoneyRepo(moneyDAO)
-//        val moneyViewModelFactory = MoneyViewModelFactory(moneyRepo)
-//
-//        moneyViewModel = ViewModelProviders.of(this,moneyViewModelFactory).
-//        get(MoneyViewModel::class.java)
-
         recyclerView.adapter = MoneyAdapter(listMoney,this)
         recyclerView.layoutManager = LinearLayoutManager(context)
 

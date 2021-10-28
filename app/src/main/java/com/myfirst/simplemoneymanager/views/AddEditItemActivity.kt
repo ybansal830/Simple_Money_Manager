@@ -32,14 +32,6 @@ class AddEditItemActivity : AppCompatActivity(), AdapterView.OnItemSelectedListe
 
         datePickerDialog()
 
-//        val moneyDatabase = MoneyDatabase.getDatabaseObject(this)
-//        val moneyDAO = moneyDatabase.getMoneyDAO()
-//        val moneyRepo = MoneyRepo(moneyDAO)
-//        val moneyViewModelFactory = MoneyViewModelFactory(moneyRepo)
-//
-//        moneyViewModel = ViewModelProviders.of(this,moneyViewModelFactory).
-//        get(MoneyViewModel::class.java)
-
         // Setting and showing item list for selection of particular category.
 
         ArrayAdapter.createFromResource(this, R.array.category,
@@ -63,7 +55,7 @@ class AddEditItemActivity : AppCompatActivity(), AdapterView.OnItemSelectedListe
                         etAmount.text.toString().toFloat(),etDescription.text.toString(),
                         tvDate.text.toString())
                     moneyViewModel.addMoney(money)
-                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
                 }
             }
         }
@@ -78,7 +70,7 @@ class AddEditItemActivity : AppCompatActivity(), AdapterView.OnItemSelectedListe
         }
 
         tvBack.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
     }
@@ -104,6 +96,7 @@ class AddEditItemActivity : AppCompatActivity(), AdapterView.OnItemSelectedListe
                 money.date = tvDate.text.toString()
                 money.amount = etAmount.text.toString().toFloat()
                 moneyViewModel.updateMoney(money)
+                finishAffinity()
                 startActivity(Intent(this, MainActivity::class.java))
             }
         }
