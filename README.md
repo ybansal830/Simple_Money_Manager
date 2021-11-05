@@ -1,6 +1,9 @@
 
+
 # Simple Money Manager
 #### This app is a simple money manager app which helps you to add your daily small incomes and expenses and track them easily.
+
+<a href = 'https://play.google.com/store/apps/details?id=com.myfirst.simplemoneymanager/'> <img width = '300px' align= 'center' src="https://firebasestorage.googleapis.com/v0/b/money-manager-2215d.appspot.com/o/google_play.png?alt=media&token=247a837c-5204-4db9-a999-6c1fc317fae0"/></a>
 
 ## Screenshots
 
